@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <title>My Blog</title>
+
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="main-title">My Blog</h1>
+    </header>
+
+    <main id="content">
+      <span class="space"></span>
+
+      <section>
+        <div class="section-title">
+          Painel dos clientes
+        </div>
+
+        <span class="space"></span>
+
+        <div class="content-title">
+          Listagem de Usuários
+        </div>
+      </section>
+    </main>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.14.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.14.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.14.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.14.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.14.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(
+            (feature) => typeof app[feature] === 'function'
+          );
+          console.log(`Firebase SDK loaded with ${features.join(', ')}`);
+        } catch (e) {
+          console.error('Error loading the Firebase SDK, check the console.');
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  width: 100%;
+  background-color: rgb(42, 42, 42);
+  height: 100px;
+}
+
+.main-title {
+  margin: 0;
+  padding: 0;
+  top: 25%;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.space {
+  height: 2em;
+  display: inherit;
+}
