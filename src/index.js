@@ -1,3 +1,4 @@
-import './style.css';
+import './css/style.css';
+import { verifyFirebaseConfiguration } from './js/firebase-config';
 
-let hello_world = "Hello World";
+verifyFirebaseConfiguration();

@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css">
     <title>My Blog</title>
 
   </head>
@@ -38,18 +37,5 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(
-            (feature) => typeof app[feature] === 'function'
-          );
-          console.log(`Firebase SDK loaded with ${features.join(', ')}`);
-        } catch (e) {
-          console.error('Error loading the Firebase SDK, check the console.');
-        }
-      });
-    </script>
   </body>
 </html>
