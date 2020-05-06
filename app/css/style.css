@@ -1,12 +1,25 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format("woff2");
+}
+
+/* Estilos globais */
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto';
 }
+
+#content {
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
 
 #header {
   width: 100%;
   background-color: rgb(42, 42, 42);
-  height: 100px;
+  height: 80px;
 }
 
 .main-title {
@@ -21,4 +34,10 @@ body {
 .space {
   height: 2em;
   display: inherit;
+}
+
+/* Section principal */
+
+.section-title {
+  font-size: 1.8em;
 }

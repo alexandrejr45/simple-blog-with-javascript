@@ -4,4 +4,3 @@ import { verifyFirebaseConfiguration, firebaseConnect} from './js/firebase-confi
 firebaseConnect();
 verifyFirebaseConfiguration();
 
-//verifyFirebaseConfiguration();
