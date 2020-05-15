@@ -3,31 +3,58 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <meta name="description" content="">
+    <meta name="description" content="This is a simple blog with javascript">
     <title>My Blog</title>
 
   </head>
   <body>
-    <header id="header">
+    <header class="header">
       <h1 class="main-title">My Blog</h1>
     </header>
 
-    <main id="content">
-      <div class="container">
-        <span class="space"></span>
+    <span class="space"></span>
 
-        <section id="">
+    <main class="content">
+      <div class="container">
+        <header id="cabecalho-content item">
           <div class="section-title">
             Painel de clientes
           </div>
-  
           <span class="space"></span>
-  
+
           <!-- <div class="content-title">
             Listagem de Usuários
           </div> -->
+        </header>
+
+        <section id="secao_formulario">
+          <div class="botoes_interacao">
+            <button id="botao-adicionar" class="botao-adicionar">Adicionar Usuário</button>
+          </div>
+
+          <span class="space"></span>
+
+          <form id="formulario">
+              <div class="form-group">
+                <label for="formulario_nome">Nome</label>
+                <input type="text" id="formulario_nome" name="formulario_nome" required>
+
+                <span class="space_side"></span>
+
+                <label for="formulario_email">Email</label>
+                <input type="email" id="formulario_email" name="formulario_email" required>
+
+                <label for="formulario_telefone">Telefone</label>
+                <input type="number" id="formulario_telefone" name="formulario_telefone" required>
+
+                <label for="formulario_cpf">CPF</label>
+                <input type="number" id="formulario_cpf" name="formulario_cpf" required>
+
+              </div>
+          </form>
         </section>
+
+        <span class="space"></span>
       </div>
     </main>
 
