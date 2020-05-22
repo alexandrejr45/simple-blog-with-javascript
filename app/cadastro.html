@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a simple blog with javascript" />
+    <meta name="keywords" content="firebase, app, blog, javascript" />
+    <title>My Blog - Cadastro</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="main-title">My Blog</h1>
+    </header>
+
+    <span class="space"></span>
+
+    <main class="main-content grid-container grid-template-areas">
+        <header class="header-content grid-item-1">
+            <div class="section-title">
+              Painel de clientes
+            </div>
+        </header>
+
+        <section id="header-form" class="header-form">
+          <div class="title-content">
+            <p>Novo Usuário</p>
+            <p>Informe os campos a seguir para criar um novo usuário</p>
+          </div> 
+        </section>
+
+        <section class="form-content">
+            <form class="formulario">
+                <label for="formulario_nome">Nome</label>
+                <input type="text" id="formulario_nome" name="formulario_nome" required>
+    
+                <span class="space_side"></span>
+    
+                <label for="formulario_email">Email</label>
+                <input type="email" id="formulario_email" name="formulario_email" required>
+    
+                <label for="formulario_telefone">Telefone</label>
+                <input type="number" id="formulario_telefone" name="formulario_telefone" required>
+    
+                <label for="formulario_cpf">CPF</label>
+                <input type="number" id="formulario_cpf" name="formulario_cpf" required>
+            </form>
+        </section>
+    </main>
+
+    
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-storage.js"></script>
+  </body>
+</html>
