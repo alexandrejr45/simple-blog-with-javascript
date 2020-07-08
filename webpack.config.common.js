@@ -15,6 +15,16 @@ module.exports = {
       inject: true,
       template: path.resolve(__dirname, 'app', 'index.html'),
     }),
+    new HtmlWebpackPlugin({
+      filename: 'cadastro.html',
+      inject: true,
+      template: path.resolve(__dirname, 'app', 'cadastro.html'),
+    }),
+    new HtmlWebpackPlugin({
+      filename: '404.html',
+      inject: false,
+      template: path.resolve(__dirname, 'app', '404.html'),
+    }),
   ],
   module: {
     rules: [
